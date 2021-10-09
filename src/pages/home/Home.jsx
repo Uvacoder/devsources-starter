@@ -1,10 +1,12 @@
 import { HStack, VStack, Heading, Text } from "@chakra-ui/react";
 import { Hero } from "./components/Hero";
+import { Subjects } from "./components/Subjects";
 
 export const Home = () => {
   return (
-    <HStack w="100%">
+    <VStack w="100%" justify="left" spacing="4rem">
       <Hero />
-    </HStack>
+      <Subjects />
+    </VStack>
   );
 };
