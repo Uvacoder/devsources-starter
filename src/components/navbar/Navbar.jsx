@@ -14,7 +14,7 @@ export const Navbar = () => {
   return (
     <HStack w="100%" maxW="6xl" pos="fixed" top="0" p="1rem 0" spacing="2rem">
       <Heading fontSize="2xl" color="#0a2540">
-        Dev Sources
+        .sources
       </Heading>
       <Spacer />
 
