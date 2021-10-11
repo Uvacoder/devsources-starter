@@ -1,31 +1,17 @@
-import {
-  HStack,
-  Heading,
-  Spacer,
-  IconButton,
-  Link as CLink,
-} from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { HStack, Heading, Spacer, IconButton } from "@chakra-ui/react";
 import { BsList } from "react-icons/bs";
+import { style } from "./Navbar.style";
+
+/**
+ * TODO - add drawer that transitions [slide] in and fixed on desktop
+ */
 
 export const Navbar = () => {
   return (
-    <HStack
-      w="100%"
-      maxW="6xl"
-      pos="fixed"
-      top="0"
-      py="1rem"
-      px="2rem"
-      spacing="2rem"
-    >
-      {/* title */}
-      <Heading fontSize="2xl" color="#0a2540">
-        .sources
-      </Heading>
+    <HStack {...style.navbar}>
+      <Heading {...style.title}>.sources</Heading>
       <Spacer />
-
-      <IconButton bg="none" fontSize="24px" icon={<BsList />} />
+      <IconButton {...style.button} icon={<BsList />} />
     </HStack>
   );
 };
