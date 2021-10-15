@@ -10,9 +10,9 @@ function App() {
 
   return (
     <Router>
-      <Navbar onClick={handleOpen} />
+      <Navbar onClick={handleOpen} isOpen={isOpen} />
       <Layout
-        style={{ transform: isOpen ? "translateX(500px)" : "translateX(0px)" }}
+        style={{ transform: isOpen ? "translateX(300px)" : "translateX(0px)" }}
       >
         <Switch>
           <Route path="/" exact component={Home} />
