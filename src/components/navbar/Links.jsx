@@ -10,7 +10,7 @@ export const Links = ({ isOpen }) => {
       left={0}
       transform={`translateX(${isOpen ? "0" : "-500px"})`}
       borderRight="1px solid black"
-      transition=".3s ease"
+      transition="all .3s ease"
     >
       {/* code */}
     </VStack>
