@@ -6,12 +6,12 @@ import { style } from "./Navbar.style";
  * TODO - add drawer that transitions [slide] in and fixed on desktop
  */
 
-export const Navbar = () => {
+export const Navbar = ({ onClick }) => {
   return (
     <HStack {...style.navbar}>
       <Heading {...style.title}>.sources</Heading>
       <Spacer />
-      <IconButton {...style.button} icon={<BsList />} />
+      <IconButton {...style.button} icon={<BsList />} onClick={onClick} />
     </HStack>
   );
 };

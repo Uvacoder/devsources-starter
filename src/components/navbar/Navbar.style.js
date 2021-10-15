@@ -6,6 +6,9 @@ const navbar = {
   py: "1rem",
   px: "2rem",
   spacing: "2rem",
+  zIndex: "10",
+  borderBottom: "1px solid black",
+  bg: "white",
 };
 
 const title = {
