@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "./Link";
 import { VStack, HStack, Text } from "@chakra-ui/react";
 import { sources } from "../../data/sources";
 
@@ -17,26 +18,10 @@ export const Links = ({ isOpen }) => {
       transition="all .3s ease"
     >
       {sources.map((s) => (
-        <HStack
-          w="100%"
-          spacing="1rem"
-          py="1rem"
-          px="1rem"
-          rounded="md"
-          cursor="pointer"
-          border="1px solid black"
-          transition=".2s"
-          _hover={{
-            shadow: "lg",
-            bg: "purple.600",
-            color: "white",
-            transform: "translateX(5px)",
-            fontWeight: "bold",
-          }}
-        >
+        <Link>
           <s.Icon />
           <Text>{s.name}</Text>
-        </HStack>
+        </Link>
       ))}
     </VStack>
   );

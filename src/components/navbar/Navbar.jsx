@@ -1,6 +1,6 @@
 import { HStack, Heading, Spacer, IconButton } from "@chakra-ui/react";
 import { BsList, BsX } from "react-icons/bs";
-import { style } from "./Navbar.style";
+import { Nav, Title, MenuButton } from "./Navbar.style";
 import { Links } from "./Links";
 
 /**
@@ -10,15 +10,11 @@ import { Links } from "./Links";
 export const Navbar = ({ onClick, isOpen }) => {
   return (
     <>
-      <HStack {...style.navbar}>
-        <Heading {...style.title}>.sources</Heading>
+      <Nav>
+        <Title>.sources</Title>
         <Spacer />
-        <IconButton
-          {...style.button}
-          icon={isOpen ? <BsX /> : <BsList />}
-          onClick={onClick}
-        />
-      </HStack>
+        <MenuButton icon={isOpen ? <BsX /> : <BsList />} onClick={onClick} />
+      </Nav>
       <Links isOpen={isOpen} />
     </>
   );
