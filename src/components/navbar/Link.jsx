@@ -14,6 +14,8 @@ export const Link = ({ children }) => (
     _hover={{
       shadow: "lg",
       bg: "purple.600",
+      border: "1px solid",
+      borderColor: "purple.600",
       color: "white",
       transform: "translateX(5px)",
       fontWeight: "bold",
